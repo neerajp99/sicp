@@ -8,6 +8,6 @@
 		  ((and (>= b a)(>= c a)) (sum-square-largest b c)))) ; checks if b and c is greater than a 
 
 
-; Test cases:
+; Test case:
 ; Input: (find-largest 2 4 5)
 ; Output: 41
