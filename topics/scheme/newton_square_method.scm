@@ -4,7 +4,7 @@
 ; Define sqrt function to check for the square root of a number which takes a value and a guess
 
 (define (sqrt x)
-  (sqrt-iteration guess x)
+  (sqrt-iteration 1.0 x)
 )
 
 
@@ -21,7 +21,7 @@
 ; Define good-enough? which checks if a guess is good, which means the absolute
 ; of vvalue of square of guess - value is less than 0.001
 
-(define (good-enough guess x)
+(define (good-enough? guess x)
 	(< (abs (- (square guess) x)) 0.001))
 
 
