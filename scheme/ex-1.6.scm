@@ -50,7 +50,7 @@
 
 
 ; Define good-enough? which checks if a guess is good, which means the absolute
-; of vvalue of square of guess - value is less than 0.001
+; of value of square of guess - value is less than 0.001
 
 (define (good-enough? guess x)
 	(< (abs (- (square guess) x)) 0.001))

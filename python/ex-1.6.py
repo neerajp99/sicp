@@ -14,13 +14,13 @@ def sqrtIteration(guess, x):
 def square(x):
 	return (x * x)
 
-#If a guess is not the square root, improve it
-def guessImprove(guess, x):
-	return average(guess, (x/guess))
-
 #Check if the guess is close to the exact square root
 def goodEnough(guess, x):
 	 return (abs(square(guess) - x) < 0.001)
+
+#If a guess is not the square root, improve it
+def guessImprove(guess, x):
+	return average(guess, (x/guess))
 
 #Function to find the average of 2 numbers
 def average(x, y):
